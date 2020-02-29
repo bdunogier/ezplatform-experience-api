@@ -16,5 +16,11 @@
             "email": "bertrand.dunogier@ez.no"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "EzPlatform\\ExperienceAPI\\": "src/",
+            "Ez\\XPI\\": "src/"
+        }
+    }
 }
