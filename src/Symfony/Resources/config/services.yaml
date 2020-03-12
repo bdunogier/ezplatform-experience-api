@@ -1,0 +1,9 @@
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autoconfigure: true
+        autowire: true
+        public: false
+
+    EzPlatform\ExperienceAPI\Symfony\DependencyInjection\Configurator\TwigEnvironmentConfigurator:
+        decorates: twig.configurator.environment

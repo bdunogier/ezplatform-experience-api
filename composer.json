@@ -20,7 +20,7 @@
     "autoload": {
         "psr-4": {
             "EzPlatform\\ExperienceAPI\\": "src/",
-            "Ez\\XPI\\": "src/"
+            "Ez\\XPI\\": "api/"
         }
     }
 }

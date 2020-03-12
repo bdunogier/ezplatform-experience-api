@@ -1,0 +1,9 @@
+{# @var gallery_images \eZ\XPI\Types\Content\Gallery\GalleryImages #}
+{# @var image \eZ\XPI\Types\Media\Image\Image #}
+{% for image in gallery_images %}
+    <img src="{{ image.asset.url }}" alt="{{ image.asset.alternativeText }}" />
+
+    {# @var variation \eZ\XPI\Types\Media\Image\Fields\Asset #}
+    {% set variation = image.asset.variation('small') %}
+    {{ variation.url }}
+{% endfor %}

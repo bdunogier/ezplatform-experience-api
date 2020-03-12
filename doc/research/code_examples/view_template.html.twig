@@ -1,0 +1,8 @@
+{# @var gallery \eZ\XPI\Types\Content\Gallery\Gallery #}
+{{ gallery.title }}
+
+{{ gallery.images.render()
+    .withPagination(true)
+    .withItemsPerPage(5)
+    .withTemplate('path/to/template.html.twig')
+}}

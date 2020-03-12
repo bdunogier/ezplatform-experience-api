@@ -1,0 +1,10 @@
+{# @var gallery \eZ\XPI\Types\Content\Gallery\Gallery #}
+
+{# implements __call and renders the field #}
+{{ gallery.title }}
+
+{{ gallery.images.render.
+    .withPagination(true)
+    .withItemsPerPage(5)
+    .withTemplate('path/to/template.html.twig') }}
+
